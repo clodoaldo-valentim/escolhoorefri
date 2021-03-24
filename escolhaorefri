@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Refrigerante</title>
+</head>
+<body>
+<script>
+	var pepsi =  5;
+	var coca =  6;
+	var jesus = 10;
+	var refri;
+	var valor;
+	document.write("Seja Bem vindo!<br>");
+	  document.write("Temos: Pepsi, Coca, Jesus<br>");
+	  refri = window.prompt("Escolha o seu preferido <br>");
+	  document.write("Você escolheu " + refri + "<br><br>");
+	  switch(refri){
+	  case "Pepsi":
+		document.write("O valor é R$ 5,00<br>");
+		valor = window.prompt("Insira o valor");
+		troco = valor-pepsi;
+		document.write("Seu troco é: R$ " + troco + "<br><br><br>");
+		document.write("Agradecemos a preferência");
+		break;
+	case "Coca":
+		document.write("O valor é R$ 6,00<br>");
+		valor = window.prompt("Insira o valor");
+		troco = valor-coca;
+		document.write("Seu troco é: R$ " + troco + "<br><br><br>");
+		document.write("Agradecemos a preferência");
+		break;
+	case "Jesus":
+		document.write("O valor é R$ 10,00<br>");
+		valor = window.prompt("Insira o valor");
+		troco = valor-jesus;
+		document.write("Seu troco é: R$ " + troco + "<br><br><br>");
+		document.write("Agradecemos a preferência");
+		break;
+	default: document.write("Desculpa, produto desconhecido");
+	}	
+</script>
+</body>
+</html>
